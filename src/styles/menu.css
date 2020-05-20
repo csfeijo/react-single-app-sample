@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  padding: 4px;
+  margin-bottom: 60px;
+  background: rgba(0,0,0, 0.5);
+}
+
+nav a {
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  background: red;
+  color: white;
+}
+
+nav .logo {
+  background: red;
+  margin-top: 4px;
+  margin-right: 20px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+
+  animation-name: gira;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+    background: orange;
+  }
+}
